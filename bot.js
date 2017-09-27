@@ -44,7 +44,7 @@ var retweetNodeJs = function() {
   var params = {
     q: '#NodeJs',
     result_type: 'popular',
-    lang: 'es'
+    lang: 'en'
   }
 
 T.get('search/tweets', params, function(err, data) {
