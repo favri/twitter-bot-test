@@ -35,7 +35,7 @@ T.get('search/tweets', params, function(err, data) {
 };
 var retweetNodeJs = function() {
   var params = {
-    q: '#NodeJs',
+    q: 'Santiago Maldonado',
     result_type: 'popular',
     lang: 'en'
   }
