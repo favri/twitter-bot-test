@@ -7,7 +7,7 @@ var config = require ('./config.js');
 var T = new twit (config);
 var retweetSantiago = function() {
   var params = {
-    q: 'Santiago Maldonado',
+    q: '#NodeJs',
     result_type: 'popular',
     lang: 'es'
   }
@@ -39,5 +39,5 @@ T.get('search/tweets', params, function(err, data) {
 
 // grab & retweet as soon as program is running...
 retweetSantiago();
-// retweet in every 1 day minutes
-setInterval(retweetSantiago, 360000);
+// retweet in every 6 minutes
+setInterval(retweetSantiago, 180000);
