@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "Favric test",
   "main": "bot.js",
-  "engines": {
-    "node": "6.11.3",
-    "npm": "3.10.3"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node bot.js"
@@ -26,6 +22,8 @@
   },
   "homepage": "https://github.com/favri/twitter-bot-test#readme",
   "dependencies": {
+    "express": "^4.15.5",
+    "redis": "^2.8.0",
     "twit": "^2.2.9"
   }
 }
