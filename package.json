@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/favri/twitter-bot-test#readme",
   "dependencies": {
+    "express": "^4.15.5",
     "redis": "^2.8.0",
     "twit": "^2.2.9"
   }
