@@ -4,7 +4,7 @@ var T = new twit (config);
 
 var retweetChatbot = function() {
   var params = {
-    q: '#chatbot, #Chatbot',
+    q: 'Santiago Maldonado',
     result_type: 'recent',
     lang: 'es'
   }
