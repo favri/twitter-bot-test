@@ -40,4 +40,4 @@ T.get('search/tweets', params, function(err, data) {
 // grab & retweet as soon as program is running...
 retweetSantiago();
 // retweet in every 1 day minutes
-setInterval(retweetSantiago, 180000);
+setInterval(retweetSantiago, 360000);
