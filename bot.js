@@ -4,21 +4,21 @@
 
 var twit = require ('twit');
 var config = require ('./config.js');
-var Twitter = new twit (config);
-var retweet = function() {
+var T = new twit (config);
+var retweetSantiago = function() {
   var params = {
     q: 'Santiago Maldonado',
-    result_type: 'recent',
+    result_type: 'popular',
     lang: 'es'
   }
 
-Twitter.get('search/tweets', params, function(err, data) {
+T.get('search/tweets', params, function(err, data) {
   // if there no errors
   if (!err) {
     // grab ID of tweet to retweet
     var retweetId = data.statuses[0].id_str;
     // Tell TWITTER to retweet
-    Twitter.post('statuses/retweet/:id', {
+    T.post('statuses/retweet/:id', {
       id: retweetId
     }, function(err, response) {
       if (response) {
@@ -38,6 +38,6 @@ Twitter.get('search/tweets', params, function(err, data) {
 };
 
 // grab & retweet as soon as program is running...
-retweet();
-// retweet in every 50 minutes
-setInterval(retweet, 3000000);
+retweetSantiago();
+// retweet in every 1 day minutes
+setInterval(retweetSantiago, 60 * 60 * 24 * 1000);
