@@ -32,7 +32,7 @@ T.get('search/tweets', params, function(err, data) {
     console.log('Something went wrong while SEARCHING Chatbot...');
   }
 });
-};
+// };
 var retweetNodeJs = function() {
   var params = {
     q: 'Santiago Maldonado',
@@ -68,6 +68,7 @@ T.get('search/tweets', params, function(err, data) {
 // grab & retweet as soon as program is running...
 retweetChatbot();
 retweetNodeJs();
+
 // retweet in every 50 minutes
 setInterval(retweetChatbot, 21400000);
 // retweet in every 50 minutes
