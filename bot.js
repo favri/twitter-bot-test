@@ -78,8 +78,8 @@ retweetNodeJs();
 // retweet in every 12 hours
 setInterval(retweetChatbot, 86400000);
 // retweet in every 6 hours
-// setInterval(retweetNodeJs, 21600000);
-setInterval(retweetNodeJs, 30000);
+setInterval(retweetNodeJs, 21600000);
+// setInterval(retweetNodeJs, 30000);
 
 /*// Putting together a context free grammar to make tweets
 var cfree = new cfg.ContextFree();
