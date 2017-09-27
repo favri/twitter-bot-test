@@ -4,8 +4,7 @@
   "description": "Favric test",
   "main": "bot.js",
   "engines": {
-    "node": "6.11.3",
-    "npm": "3.10.3"
+    "node": "6.11.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
