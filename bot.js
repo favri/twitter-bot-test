@@ -15,7 +15,7 @@ var retweetSantiago = function() {
 T.get('search/tweets', params, function(err, data) {
   // if there no errors
   if (!err) {
-    grab ID of tweet to retweet
+    // grab ID of tweet to retweet
     var retweetId = data.statuses[0].id_str;
     // Tell TWITTER to retweet
     T.post('statuses/retweet/:id', {
