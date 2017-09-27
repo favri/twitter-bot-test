@@ -2,7 +2,7 @@
  * Created by cliengo on 27/09/17.
  */
 
-/ A2Z F15
+// A2Z F15
 // Daniel Shiffman
 // https://github.com/shiffman/A2Z-F15
 

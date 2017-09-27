@@ -3,6 +3,7 @@
  */
 
 var twit = require ('twit');
+var redis = require('redis');
 var config = require ('./config.js');
 var T = new twit (config);
 var cfg = require('./cf');
@@ -100,3 +101,31 @@ function tweeter() {
     }
   };
 }
+
+var stream = T.stream('statuses/filter', { track: 'Donde está Santiago Maldonado?' });
+
+var url = require('url');
+var redisURL = url.parse(process.env.REDISCLOUD_URL || 'redis://127.0.0.1:6379');
+var client = redis.createClient(redisURL.port, redisURL.hostname, {no_ready_check: true});
+if (process.env.REDISCLOUD_URL) {
+  client.auth(redisURL.auth.split(":")[1]);
+}
+
+var REDIS_KEY = 'repliedTo';
+function processTweet(tweet) {
+  client.sadd(REDIS_KEY, tweet.user.id_str, function(err, reply) {
+    if (err) {
+      console.log(err);
+    } else if (reply == 1 || tweet.user.screen_name == process.env.TWITTER_DEBUG_USER) {
+      console.log('This is a new user OR it is the debug user');
+      // replyTo(tweet, 'Good evening!');
+    } else {
+      console.log('We have seen this user before');
+    }
+  });
+}
+
+
+stream.on('tweet', function (tweet) {
+  console.log(tweet.text);
+});
