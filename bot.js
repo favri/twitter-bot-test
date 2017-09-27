@@ -6,7 +6,7 @@ var twit = require ('twit');
 var redis = require('redis');
 var config = require ('./config.js');
 var T = new twit (config);
-var cfg = require('./cf');
+// var cfg = require('./cf');
 
 var retweetChatbot = function() {
   var params = {
