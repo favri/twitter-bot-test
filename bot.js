@@ -5,7 +5,7 @@
 var twit = require ('twit');
 var config = require ('./config.js');
 var T = new twit (config);
-var retweetSantiago = function() {
+var retweetNodeOrAngular = function() {
   var params = {
     q: '#NodeJs,#AngularJs',
     result_type: 'recent',
@@ -38,6 +38,6 @@ T.get('search/tweets', params, function(err, data) {
 };
 
 // grab & retweet as soon as program is running...
-retweetSantiago();
+retweetNodeOrAngular();
 // retweet in every 6 minutes
-setInterval(retweetSantiago, 260000000);
+setInterval(retweetNodeOrAngular, 250000000);
