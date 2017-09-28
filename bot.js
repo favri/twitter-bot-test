@@ -3,8 +3,9 @@
  */
 
 var twit = require ('twit');
-var config = require ('./config.js');
+var config = require ('./config');
 var T = new twit (config);
+
 var retweetNodeOrAngular = function() {
   var params = {
     q: '#NodeJs,#AngularJs',
