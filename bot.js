@@ -7,7 +7,7 @@ var config = require ('./config.js');
 var T = new twit (config);
 var retweetSantiago = function() {
   var params = {
-    q: '#NodeJs',
+    q: '#NodeJs,#AngularJs',
     result_type: 'recent',
     lang: 'es'
   }
