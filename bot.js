@@ -40,5 +40,5 @@ T.get('search/tweets', params, function(err, data) {
 
 // grab & retweet as soon as program is running...
 retweetNodeOrAngular();
-// retweet in every 6 minutes
-setInterval(retweetNodeOrAngular, 250000000);
+// retweet in every 12 hours
+setInterval(retweetNodeOrAngular, 43200000);
