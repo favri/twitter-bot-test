@@ -2,6 +2,8 @@ const twit = require ('twit');
 const config = require ('./config');
 const T = new twit (config);
 const https = require ('https');
+const path = require('path');
+const fs = require('fs');
 
 let imgsObj = [];
 let postImgObj = {};
