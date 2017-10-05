@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b6d9845-54bf-44b4-a72d-0e166faa3877" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photobot.js" afterPath="$PROJECT_DIR$/photobot.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -126,8 +125,8 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/bot.js" />
         <option value="$PROJECT_DIR$/markovBot.js" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/photobot.js" />
+        <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
@@ -658,7 +657,7 @@
       <workItem from="1506609587485" duration="6780000" />
       <workItem from="1506630400349" duration="1112000" />
       <workItem from="1506692941648" duration="6264000" />
-      <workItem from="1507208259383" duration="10164000" />
+      <workItem from="1507208259383" duration="11975000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1506517900989</created>
@@ -989,11 +988,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507224891280</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Working 3 bots!">
+      <created>1507226545550</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1507226545550</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45051000" />
+    <option name="totallyTimeSpent" value="46862000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1365" y="0" width="1922" height="1081" extended-state="6" />
