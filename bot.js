@@ -2,12 +2,12 @@
  * Created by cliengo on 25/09/17.
  */
 
-var twit = require ('twit');
-var config = require ('./config');
-var T = new twit (config);
+const twit = require ('twit');
+const config = require ('./config');
+const T = new twit (config);
 
-var retweetNodeOrAngular = function() {
-  var params = {
+const retweetNodeOrAngular = function() {
+  let params = {
     q: '#NodeJs,#AngularJs',
     result_type: 'recent',
     lang: 'es'
