@@ -8,10 +8,10 @@ const T = new twit (config);
 
 const retweetNodeOrAngular = function() {
   let params = {
-    q: '#NodeJs,#AngularJs',
+    q: '#NodeJs, #AngularJs',
     result_type: 'recent',
     lang: 'es'
-  }
+  };
 
 T.get('search/tweets', params, function(err, data) {
   // if there no errors

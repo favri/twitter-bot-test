@@ -41,7 +41,7 @@ let saveFile = function (postImgObj, fileName) {
       console.log(err);
     } else {
       console.log('Media saved!');
-      const descriptionText = 'Foto de: ' + postImgObj.user.name + ' @' +postImgObj.user.twitter_username + ' vía @unsplash';
+      const descriptionText = 'Foto de: ' + postImgObj.user.name + ' @' + postImgObj.user.twitter_username + ' ' + postImgObj.urls.regular +' vía @unsplash';
       uploadMedia(descriptionText, fileName)
     }
   })
@@ -55,7 +55,7 @@ let uploadMedia = function (descriptionText, fileName) {
     if (err) {
       console.log(err);
     } else {
-      console.log(data);
+      console.log('Data ok');
       const params = {
         status: descriptionText,
         media_ids: data.media_id_string

@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/favri/twitter-bot-test#readme",
   "dependencies": {
+    "csv-parse": "^1.2.3",
     "dotenv": "^4.0.0",
     "redis": "^2.8.0",
+    "rita": "^1.2.12",
     "twit": "^2.2.9"
   }
 }
