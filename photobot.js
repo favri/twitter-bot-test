@@ -26,7 +26,7 @@ let tweetRandomImage = function () {
       imgsObj = JSON.parse(data);
       postImgObj= imgsObj[position];
       console.log (postImgObj.id);
-      saveFile(postImgObj, postImgObj.id + '.jpg');
+      saveFile(postImgObj, 'unsplash-img/' + postImgObj.id + '.jpg');
     });
 
   })
@@ -43,7 +43,7 @@ let saveFile = function (postImgObj, fileName) {
     } else {
       console.log('Media saved!');
       const descriptionText = 'Foto de: ' + postImgObj.user.name + ' @' + postImgObj.user.twitter_username + ' ' + postImgObj.urls.regular + postImgObj.color + '#hex #DailyPhoto vía @unsplash';
-      uploadMedia(descriptionText, fileName)
+      uploadMedia(descriptionText, fileName);
     }
   })
 };
@@ -61,7 +61,7 @@ let uploadMedia = function (descriptionText, fileName) {
         status: descriptionText,
         media_ids: data.media_id_string
       };
-      postStatus(params)
+      postStatus(params);
     }
   })
 };
