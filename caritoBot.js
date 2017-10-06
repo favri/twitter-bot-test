@@ -45,4 +45,4 @@ const caritosTweets = function() {
 };
 
 caritosTweets();
-setTimeout(caritosTweets,5000);
+setInterval(caritosTweets,50000);
