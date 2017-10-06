@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0b6d9845-54bf-44b4-a72d-0e166faa3877" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caritoBot.js" afterPath="$PROJECT_DIR$/caritoBot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markovBot.js" afterPath="$PROJECT_DIR$/markovBot.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,7 +60,7 @@
       <file leaf-file-name="caritoBot.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/caritoBot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
+            <state relative-caret-position="483">
               <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
               <folding />
             </state>
@@ -80,8 +80,8 @@
       <file leaf-file-name="markovBot.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/markovBot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="59" column="26" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+            <state relative-caret-position="165">
+              <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -125,10 +125,10 @@
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/bot.js" />
-        <option value="$PROJECT_DIR$/markovBot.js" />
         <option value="$PROJECT_DIR$/photobot.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/caritoBot.js" />
+        <option value="$PROJECT_DIR$/markovBot.js" />
       </list>
     </option>
   </component>
@@ -674,14 +674,7 @@
       <workItem from="1506630400349" duration="1112000" />
       <workItem from="1506692941648" duration="6264000" />
       <workItem from="1507208259383" duration="13562000" />
-      <workItem from="1507293943058" duration="10074000" />
-    </task>
-    <task id="LOCAL-00004" summary="Added Engines">
-      <created>1506519463851</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1506519463851</updated>
+      <workItem from="1507293943058" duration="10258000" />
     </task>
     <task id="LOCAL-00005" summary="Added Engines">
       <created>1506521753442</created>
@@ -1019,11 +1012,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507312146895</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Working 3 bots!">
+      <created>1507313811795</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1507313811795</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58523000" />
+    <option name="totallyTimeSpent" value="58707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1365" y="0" width="1922" height="1081" extended-state="6" />
@@ -1414,14 +1414,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markovBot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="59" column="26" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -1462,9 +1454,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/markovBot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/caritoBot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
+        <state relative-caret-position="483">
           <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
           <folding />
         </state>

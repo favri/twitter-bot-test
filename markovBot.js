@@ -39,7 +39,7 @@ let cleanText = function (text) {
 };
 
 let hasNoStopWords = function (token) {
-  const stopwords = ['@', 'http', 'RT'];
+  const stopwords = ['@', 'http', 'RT','PJ'];
   return stopwords.every(sw => !token.includes(sw))
 }
 
