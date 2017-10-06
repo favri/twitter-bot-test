@@ -25,8 +25,7 @@ let tweetRandomImage = function () {
 
       imgsObj = JSON.parse(data);
       postImgObj= imgsObj[position];
-      console.log (postImgObj.id);
-      saveFile(postImgObj, 'unsplash-img/' + postImgObj.id + '.jpg');
+      saveFile(postImgObj, 'unsplash.jpg');
     });
 
   })
