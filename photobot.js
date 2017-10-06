@@ -8,10 +8,10 @@ const request = require('request')
 
 let imgsObj = [];
 let postImgObj = {};
-let position = Math.floor(Math.random() * 10) + 1;
+let position = Math.floor(Math.random() * 50) + 1;
 
 let tweetRandomImage = function () {
-  https.get('https://api.unsplash.com/photos/curated/?client_id=1d92ead385c3a261431126c2c906ed9d6961c6d55130e373d8edaac5ad60d052&order_by=latest', (resp) => {
+  https.get('https://api.unsplash.com/photos/curated/?client_id=1d92ead385c3a261431126c2c906ed9d6961c6d55130e373d8edaac5ad60d052&order_by=latest&per_page=50', (resp) => {
     let data = '';
     // console.log('arguments', res.data);
 
@@ -25,7 +25,8 @@ let tweetRandomImage = function () {
 
       imgsObj = JSON.parse(data);
       postImgObj= imgsObj[position];
-      saveFile(postImgObj, 'unsplash.jpg');
+      console.log (postImgObj.id);
+      saveFile(postImgObj, postImgObj.id + '.jpg');
     });
 
   })
@@ -41,7 +42,7 @@ let saveFile = function (postImgObj, fileName) {
       console.log(err);
     } else {
       console.log('Media saved!');
-      const descriptionText = 'Foto de: ' + postImgObj.user.name + ' @' + postImgObj.user.twitter_username + ' ' + postImgObj.urls.regular +' vía @unsplash';
+      const descriptionText = 'Foto de: ' + postImgObj.user.name + ' @' + postImgObj.user.twitter_username + ' ' + postImgObj.urls.regular + postImgObj.color + '#hex #DailyPhoto vía @unsplash';
       uploadMedia(descriptionText, fileName)
     }
   })
