@@ -4,7 +4,7 @@ const T = new twit (config);
 
 let caritosId = '182386151';
 // let stream = T.stream('statuses/filter', { follow: caritosId });
-let answeredTweets = ['916308363922825216','916312666779586560','916309650580103168'];
+let answeredTweets = ['916308363922825216','916312666779586560','916309650580103168','916668248082567168','916382701082628096'];
 ;
 const caritosTweets = function() {
   let params = {
