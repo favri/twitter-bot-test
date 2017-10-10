@@ -1,4 +1,4 @@
 require ('./bot');
 require ('./photobot');
-require ('./markovBot');
+// require ('./markovBot');
 require ('./caritoBot');
