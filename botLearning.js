@@ -8,14 +8,15 @@ const T = new twit (config);
 
 const retweetCss = function() {
   let params = {
-    q: '#CSS, #JavaScript , #Scratch',
-    result_type: 'popular',
+    q: '#Scratch',
+    result_type: 'recent',
     lang: 'es'
   };
 
 T.get('search/tweets', params, function(err, data) {
   // if there no errors
   if (!err) {
+    console.log('data', data);
     // grab ID of tweet to retweet
     var retweetId = data.statuses[0].id_str;
     // Tell TWITTER to retweet

@@ -15,6 +15,7 @@ const retweetNodeOrAngular = function() {
 
 T.get('search/tweets', params, function(err, data) {
   // if there no errors
+  console.log('data', data.statuses[0]);
   if (!err) {
     // grab ID of tweet to retweet
     var retweetId = data.statuses[0].id_str;
